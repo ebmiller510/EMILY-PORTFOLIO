@@ -40,6 +40,31 @@ if (window.location.pathname === "/home.html"){
 
 }else if (window.location.pathname === "/projects.html"){
 
+    function bigImg(x) {
+        document.getElementById('spaceImg').style.height = "500px";
+        document.getElementById('spaceImg').style.width = "500px";
+     }
+     
+     function normalImg(x) {
+        document.getElementById('spaceImg').style.height = "400px";
+        document.getElementById('spaceImg').style.width = "400px";
+     }
+
+     function hangmanBig(x) {
+        document.getElementById('hangmanImg').style.height = "500px";
+        document.getElementById('hangmanImg').style.width = "500px";
+     }
+
+     function hangmanSmall(x) {
+        document.getElementById('hangmanImg').style.height = "400px";
+        document.getElementById('hangmanImg').style.width = "400px";
+     }
+
+
+
+
+
+
 }else if (window.location.pathname === "/resume.html"){
 
 }else if(window.location.pathname === "/aboutme.html"){

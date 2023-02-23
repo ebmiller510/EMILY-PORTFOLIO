@@ -228,3 +228,32 @@ h3 li a{
 
 /************************PROJECTS PAGE***********************/
 /************************************************************/
+
+#projectsSection{
+    /* border: solid yellow 10px; */
+    /* margin: 3rem 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image-of-space-battle space-battle-description"
+        "image-of-hangman hangman-description"; */
+}
+
+#here{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* border: solid green 10px; */
+    /* grid-area: hangman-description; */
+    
+}
+
+#linkedinButton{
+    font-size: 50px;
+}
+
+.gitHub{
+    width: 50px;
+    height: 50px;
+}
