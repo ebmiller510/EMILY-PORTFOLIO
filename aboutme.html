@@ -20,10 +20,10 @@
 
 <body id="aboutMeBody">
     <ul>
-        <li><a href="home.html" class="navBar">Home</a></li>
-        <li><a href="projects.html" class="navBar">Projects</a></li>
-        <li><a href="resume.html" class="navBar">Resume</a></li>
-        <li><a href="aboutme.html" class="navBar">About Me</a></li>
+        <li><a href="home.html" class="navBar" id="ball-1">Home</a></li>
+        <li><a href="projects.html" class="navBar" id="ball-2">Projects</a></li>
+        <li><a href="resume.html" class="navBar" id="ball-3">Resume</a></li>
+        <li><a href="aboutme.html" class="navBar" id="ball-4">About Me</a></li>
 
         <button id="color-theme">Theme Change</button>
 
@@ -31,8 +31,8 @@
 
     <div id="aboutMeSection">
         <div id="quadrant-two">
-        <!-- image carousel -->
-
+        <!-- Quad two : image carousel -->
+            
             <div class="aboutMeImgButton-prev">
                 <span class="lnr lnr-arrow-left-circle"></span>
             </div>
@@ -48,19 +48,39 @@
             </div>        
 
         </div>
-        <!-- content about me -->
+        <!-- Quad one : content about me -->
         <div id="quadrant-one">
             <h3 id="aboutMeHeader">My journey so far...</h2>
 
-            <p id="aboutMeContent">content explaining my past education. my interests. </p>
+            <p class="aboutMe-p" id="aboutMeContent">As a recent pandemic-graduate, life has brought many experiences my way. my interests. </p>
+            <p class="aboutMe-p"> During this time I realized I love to travel, cook and bake! </p>
+
         </div>
-        <!-- content about my skill -->
+
+
+        <!-- Quad three : content about my skill -->
         <div id="quadrant-three">
-            <h3 id="aboutMeHeader"> Looking forward...<h3>
+            <h3 id="aboutMeHeader"> Looking forward...</h3>
+            
+            <p class="aboutMe-p">I look forward to entering this field as a software engineer where my passion for good-looking UX/UI desgin can thrive</p>
+            <p class="aboutMe-p">To be proficient in:<br>
+                DOM<br>
+                NODE<br>
+                Git & GitHub<br>
+                React<br>
+                Python<br>
+                Javascript<br>
+                HTML<br>
+                CSS<br>
+                Etc.
+            </p>
         </div>
 
 
-        <!-- image about skill/gif -->
+        <!-- Quad four : image about skill/gif -->
+        <div id="quadrant-four">
+            <img id="skill-image" width=700px height=700px src="gifs/gif2.gif">
+        </div>
         
     </div>
 

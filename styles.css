@@ -1,11 +1,14 @@
 :root {
-    --dark-theme-main-color: rgb(33, 11, 44);
+    /* --dark-theme-main-color: rgb(33, 11, 44);
 
-    --light-theme-main-color: rgb(235, 227, 220);
+    --light-theme-main-color: rgb(235, 227, 220); */
+
+    --main-color: rgb(255, 243, 235);
+   
 }    
 
 body{
-    background-color: var(--dark-theme-main-color);
+    background-color: var(--main-color);
     margin-top: 40px;
 
 }
@@ -14,7 +17,7 @@ body{
     /* display: flex; */
     flex-direction: row;
     justify-content: center;
-    border: solid blue 4px;
+    /* border: solid blue 4px; */
     background-color: transparent;
     font-family: "Marcellus", sans-serif;
     border: none;
@@ -29,14 +32,14 @@ button{
 ul{
     list-style-type: none;
     display: inline;
-    border: solid red 2px;
+    /* border: solid red 2px; */
     display: flex;
     justify-content: center;
 }
 
 
 .navBar{
-    border: solid purple 2px;
+    /* border: solid purple 2px; */
     padding: 20px 40px;
     margin: 0 40px;
     font-size: 40px;
@@ -55,7 +58,7 @@ ul{
 }
 
 #welcomeStatement{
-    border: solid lawngreen 3px;
+    /* border: solid lawngreen 3px; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -68,13 +71,13 @@ h1{
     margin: 0;
     font-family: "Marcellus", sans-serif;
     font-size: 57px;
-    border: solid red 3px;
+    /* border: solid orange 3px; */
     display: block;
     color: #AF83AB;
 }
 
 h2{
-    border: solid turquoise 3px;
+    /* border: solid turquoise 3px; */
     display: block;
     font-family: "Marcellus", sans-serif;
     margin-bottom: 5px;
@@ -83,27 +86,32 @@ h2{
 }
 
 h3 {
-    border: solid red 3px;
+    /* border: solid orange 3px; */
     text-align: center;
     text-decoration: none;
     list-style: none;
     font-family: "Marcellus", sans-serif;
-    margin: 0;
+    margin: 10px;
 
 
 }
 
 h3 li a{
-    border: solid purple 3px;
+    /* border: solid purple 3px; */
     text-decoration: none;
     font-family: "Marcellus", sans-serif;
     
 }
 
+
+
+
+/************************ABOUT ME PAGE***********************/
+/************************************************************/
 /* about me page */
 #aboutMeSection{
-    border: solid red 2px;
-    margin: 10rem;
+    /* border: solid yellow 10px; */
+    margin: 3rem 10rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -113,24 +121,17 @@ h3 li a{
 }
 
 
-
-/************************ABOUT ME PAGE***********************/
-/************************************************************/
-#aboutMeHeader{
-    text-align: left;
-}
-
-
 /* carousel section */
     #quadrant-two{
         grid-area: image-carousel;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     #aboutMeImgContainer img{
         display: none;
-        border: solid green 3px;
+        /* border: solid green 3px; */
         margin: 15px;
     }
 
@@ -155,19 +156,75 @@ h3 li a{
 
 
 /* text about carousel and interests */
+ 
 
     #quadrant-one{
         grid-area: about-me-info;
-    } 
+        display: flex;
+        align-items: center;  
+        /* height: 1000px;
+        width: 700px; */
+        margin: 60px;
+        /* border: solid lightpink 5px; */
+        flex-wrap: wrap;
+        flex-flow: column;
+        padding: 400px 25px;
+    
+    }
+
+   
     
 
 /* text about future hopes */
     #quadrant-three{
-        grid-area: looking-forward;    
+        grid-area: looking-forward;  
+        display: flex;
+        align-items: center;  
+        /* height: 1000px;
+        width: 700px; */
+        margin: 60px;
+        /* border: solid lightpink 5px; */
+        flex-wrap: wrap;
+        flex-flow: column;
+        padding: 40px 25px;
+    
     }
 
 /* images about future skills/hopes */
 
     #quadrant-four{
         grid-area: skills-image;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 60px;
+
+
     }
+    
+    /* #skill-image{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+ */
+
+
+    #aboutMeHeader{
+        /* border: navy solid 4px; */
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        font-size: 40px;   
+    }
+
+    .aboutMe-p{
+        /* border: solid lightsalmon 4px; */
+        font-size: 28px;
+    }
+
+
+/************************PROJECTS PAGE***********************/
+/************************************************************/

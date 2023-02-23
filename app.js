@@ -1,70 +1,79 @@
 
 
-
-
-
-
 //color-theme-change button 
+
 const root = document.querySelector(':root');
 const body = document.querySelector('body');
 
 const colorThemeButton = document.getElementById('color-theme');
 const lightThemeColor = getComputedStyle(root).getPropertyValue('--light-theme-main-color').trim();
 const darkThemeColor = getComputedStyle(root).getPropertyValue('--dark-theme-main-color').trim();
-// console.log(getComputedStyle(root).backgroundColor);
 
-// console.log(lightThemeColor);
-// console.log(darkThemeColor);
-//toggle functionality if current color is ___
+
+if (sessionStorage.getItem('color mode') === null){
+    sessionStorage.setItem('color mode', 'light mode')
+}
+
+if (sessionStorage.getItem('color mode') === 'dark mode'){
+    document.querySelector(':root').style.setProperty('--main-color', 'rgb(255, 243, 235)');
+}
+// functionality of button
 colorThemeButton.addEventListener('click', () => {
 
-    const bodyEl = getComputedStyle(body).getPropertyValue('background-color');
-    console.log(bodyEl);
-
-    if (bodyEl === darkThemeColor){
-        root.style.setProperty('--dark-theme-main-color', lightThemeColor);
+    // const bodyEl = getComputedStyle(body).getPropertyValue('background-color');
+    if (sessionStorage.getItem('color mode') === 'light mode'){
+        document.querySelector(':root').style.setProperty('--main-color', 'rgb(126, 78, 101)');
+        sessionStorage.setItem('color mode', 'dark mode');
         console.log('in if'); 
 
-    }else if(bodyEl === lightThemeColor){
-        root.style.setProperty('--light-theme-main-color', darkThemeColor);
-        console.log('in else')
-        console.log(bodyEl);
+    }else if(sessionStorage.getItem('color mode') === 'dark mode'){
+        document.querySelector(':root').style.setProperty('--main-color', 'rgb(255, 243, 235)');
+        // root.style.setProperty('--dark-theme-main-color', lightThemeColor);
+        sessionStorage.setItem('color mode', 'light mode');
+        console.log('in else');
     }         
-        console.log(bodyEl);
-        console.log('==============')
 });
 
 
 
-// aboutMePage img carousel //
-let previousImgIndex = 0;
-let currentImgIndex =0;
+if (window.location.pathname === "/home.html"){
 
-const aboutMePageImages = document.getElementsByClassName('aboutMeImg');
+}else if (window.location.pathname === "/projects.html"){
 
-// event listener for previous button
-const previousButton = document.querySelector('.aboutMeImgButton-prev');
-previousButton.addEventListener('click', () => {
-    previousImgIndex = currentImgIndex;
-        currentImgIndex--;
-        aboutMePageImages[previousImgIndex].style.display ='none';
-        if (currentImgIndex < 0) {
-            currentImgIndex = aboutMePageImages.length -1;
-            }
-        aboutMePageImages[currentImgIndex].style.display = 'block';
+}else if (window.location.pathname === "/resume.html"){
+
+}else if(window.location.pathname === "/aboutme.html"){
+        // aboutMePage img carousel //
+        let previousImgIndex = 0;
+        let currentImgIndex =0;
+
+        const aboutMePageImages = document.getElementsByClassName('aboutMeImg');
+
+        // event listener for previous button
+        const previousButton = document.querySelector('.aboutMeImgButton-prev');
+        previousButton.addEventListener('click', () => {
+            previousImgIndex = currentImgIndex;
+                currentImgIndex--;
+                aboutMePageImages[previousImgIndex].style.display ='none';
+                if (currentImgIndex < 0) {
+                    currentImgIndex = aboutMePageImages.length -1;
+                    }
+                aboutMePageImages[currentImgIndex].style.display = 'block';
+                });
+            console.log(previousButton);
+
+        //event listener for next button
+        const nextButton = document.querySelector('.aboutMeImgButton-next');
+        nextButton.addEventListener('click', () => {
+            previousImgIndex = currentImgIndex;
+            currentImgIndex++;
+            aboutMePageImages[previousImgIndex].style.display ='none';
+            if (currentImgIndex >= aboutMePageImages.length) {
+                currentImgIndex = 0;
+                }
+            aboutMePageImages[currentImgIndex].style.display = 'block';
         });
-    console.log(previousButton);
 
-//event listener for next button
-const nextButton = document.querySelector('.aboutMeImgButton-next');
-nextButton.addEventListener('click', () => {
-    previousImgIndex = currentImgIndex;
-    currentImgIndex++;
-    aboutMePageImages[previousImgIndex].style.display ='none';
-    if (currentImgIndex >= aboutMePageImages.length) {
-        currentImgIndex = 0;
-        }
-    aboutMePageImages[currentImgIndex].style.display = 'block';
-    });
+}
 
 
