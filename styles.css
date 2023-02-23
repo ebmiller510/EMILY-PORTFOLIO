@@ -1,0 +1,173 @@
+:root {
+    --dark-theme-main-color: rgb(33, 11, 44);
+
+    --light-theme-main-color: rgb(235, 227, 220);
+}    
+
+body{
+    background-color: var(--dark-theme-main-color);
+    margin-top: 40px;
+
+}
+
+#color-theme{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    border: solid blue 4px;
+    background-color: transparent;
+    font-family: "Marcellus", sans-serif;
+    border: none;
+
+}
+
+button{
+    /* display: flex; */
+    font-size: 15px;
+}
+
+ul{
+    list-style-type: none;
+    display: inline;
+    border: solid red 2px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navBar{
+    border: solid purple 2px;
+    padding: 20px 40px;
+    margin: 0 40px;
+    font-size: 40px;
+    /* float: left; */
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    text-decoration: none;   
+    width:8rem;
+    height: 9rem;
+    border-radius: 50%;
+    /* background: var(--light-theme-main-color);
+    border-color: var(--light-theme-main-color); */
+    text-align: center;
+    align-items: center;
+}
+
+#welcomeStatement{
+    border: solid lawngreen 3px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h1{
+    padding: 250px 0 20px 0;
+    margin: 0;
+    font-family: "Marcellus", sans-serif;
+    font-size: 57px;
+    border: solid red 3px;
+    display: block;
+    color: #AF83AB;
+}
+
+h2{
+    border: solid turquoise 3px;
+    display: block;
+    font-family: "Marcellus", sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    
+}
+
+h3 {
+    border: solid red 3px;
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Marcellus", sans-serif;
+    margin: 0;
+
+
+}
+
+h3 li a{
+    border: solid purple 3px;
+    text-decoration: none;
+    font-family: "Marcellus", sans-serif;
+    
+}
+
+/* about me page */
+#aboutMeSection{
+    border: solid red 2px;
+    margin: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "image-carousel about-me-info"
+        "looking-forward skills-image";
+}
+
+
+
+/************************ABOUT ME PAGE***********************/
+/************************************************************/
+#aboutMeHeader{
+    text-align: left;
+}
+
+
+/* carousel section */
+    #quadrant-two{
+        grid-area: image-carousel;
+        display: flex;
+        align-items: center;
+    }
+
+    #aboutMeImgContainer img{
+        display: none;
+        border: solid green 3px;
+        margin: 15px;
+    }
+
+    #aboutMeImgContainer img:first-of-type{
+        display: block;
+               
+    }
+
+    .aboutMeImgButton-next {
+        /* border: solid purple 3px; */
+        margin: 10px;
+        font-size: xx-large;
+        
+    }
+    .aboutMeImgButton-prev{
+        /* border: solid purple 3px; */
+        margin: 10px;
+        font-size: xx-large;
+
+    }
+
+
+
+/* text about carousel and interests */
+
+    #quadrant-one{
+        grid-area: about-me-info;
+    } 
+    
+
+/* text about future hopes */
+    #quadrant-three{
+        grid-area: looking-forward;    
+    }
+
+/* images about future skills/hopes */
+
+    #quadrant-four{
+        grid-area: skills-image;
+    }
