@@ -344,10 +344,7 @@ h3 li a{
         width: 716;
         flex-direction: row;
     }
-    li button{
-        display: flex;
-        align-items: center;
-    }
+    
 
    
 
