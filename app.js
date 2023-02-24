@@ -15,7 +15,7 @@ if (sessionStorage.getItem('color mode') === null){
 }
 
 if (sessionStorage.getItem('color mode') === 'dark mode'){
-    document.querySelector(':root').style.setProperty('--main-color', 'rgb(255, 243, 235)');
+    document.querySelector(':root').style.setProperty('--main-color', 'rgb(126, 78, 101');
 }
 // functionality of button
 colorThemeButton.addEventListener('click', () => {

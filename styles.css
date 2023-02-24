@@ -1,3 +1,6 @@
+*{
+    
+}
 :root {
     /* --dark-theme-main-color: rgb(33, 11, 44);
 
@@ -14,33 +17,34 @@ body{
 }
 
 #color-theme{
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     /* border: solid blue 4px; */
     background-color: transparent;
     font-family: "Marcellus", sans-serif;
     border: none;
-
-}
-
-button{
-    /* display: flex; */
-    font-size: 15px;
+    text-align: center;
+    padding: 0, 10px, 0, 0;
+    margin: auto;
+    align-items: center;
+    font-size: 17px;
 }
 
 ul{
     list-style-type: none;
-    display: inline;
+    /* display: inline; */
     /* border: solid red 2px; */
     display: flex;
-    justify-content: center;
+    padding: 0px;
+    margin: auto;
+    /* justify-content: center; */
 }
 
 
 .navBar{
     /* border: solid purple 2px; */
-    padding: 20px 40px;
+    padding: 20px 0px;
     margin: 0 40px;
     font-size: 40px;
     /* float: left; */
@@ -55,7 +59,9 @@ ul{
     border-color: var(--light-theme-main-color); */
     text-align: center;
     align-items: center;
+    
 }
+
 
 #welcomeStatement{
     /* border: solid lawngreen 3px; */
@@ -74,6 +80,7 @@ h1{
     /* border: solid orange 3px; */
     display: block;
     color: #AF83AB;
+
 }
 
 h2{
@@ -118,6 +125,7 @@ h3 li a{
     grid-template-areas: 
         "image-carousel about-me-info"
         "looking-forward skills-image";
+
 }
 
 
@@ -217,7 +225,7 @@ h3 li a{
         text-align: left;
         margin: 0;
         padding: 0;
-        font-size: 40px;   
+        font-size: 40px;
     }
 
     .aboutMe-p{
@@ -256,4 +264,100 @@ h3 li a{
 .gitHub{
     width: 50px;
     height: 50px;
+}
+
+/************************RESUME PAGE***********************/
+/************************************************************/
+
+#resumeImgSection{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@media (max-width: 1024px){
+
+}
+
+
+/************************MEDIA QUERIES***********************/
+/************************************************************/
+/***********FOR TABLET***********/
+@media only screen and (max-width: 768px ){
+    #homePageText{
+        text-align: center;
+        margin-bottom: 250px;
+    }
+
+    #quadrant-two{
+        width: 500px;
+        height: 700px;
+        align-items: center;
+        justify-content: center;
+    }
+    #quadrant-one{
+        width: 500px;
+        height: 200x;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 25px;
+    }
+    #quadrant-three{
+        width: 500px;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 30px;
+        
+    }
+
+    #aboutMeImgContainer{
+        width: 460.8px;
+        height: 667.92px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutMeImg{
+        width: 450px;
+        height: 642px;
+    }
+    #aboutMeGrid{
+        display: flex;
+        justify-content: center;
+    }
+    #aboutMeSection{
+        width: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+     #p2{
+        width: 490px;
+        text-align: left;
+    }
+    
+    .navBar{
+        width: 716;
+        flex-direction: row;
+    }
+    li button{
+        display: flex;
+        align-items: center;
+    }
+
+   
+
+}
+
+
+
+
+/*********FOR MOBILE************/
+
+@media only screen and (max-width: 425px){
+
 }
