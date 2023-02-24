@@ -36,7 +36,7 @@ colorThemeButton.addEventListener('click', () => {
 
 
 
-if (window.location.pathname === "/home.html"){
+if (window.location.pathname === "/index.html"){
 
 }else if (window.location.pathname === "/projects.html"){
 
