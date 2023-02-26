@@ -41,23 +41,23 @@ if (window.location.pathname === "/index.html"){
 }else if (window.location.pathname === "/projects.html"){
 
     function bigImg(x) {
-        document.getElementById('spaceImg').style.height = "500px";
-        document.getElementById('spaceImg').style.width = "500px";
+        document.getElementById('spaceImg').style.height = "35vw";
+        document.getElementById('spaceImg').style.width = "35vw";
      }
      
      function normalImg(x) {
-        document.getElementById('spaceImg').style.height = "400px";
-        document.getElementById('spaceImg').style.width = "400px";
+        document.getElementById('spaceImg').style.height = "20vw";
+        document.getElementById('spaceImg').style.width = "20vw";
      }
 
      function hangmanBig(x) {
-        document.getElementById('hangmanImg').style.height = "500px";
-        document.getElementById('hangmanImg').style.width = "500px";
+        document.getElementById('hangmanImg').style.height = "35vw";
+        document.getElementById('hangmanImg').style.width = "35vw";
      }
 
      function hangmanSmall(x) {
-        document.getElementById('hangmanImg').style.height = "400px";
-        document.getElementById('hangmanImg').style.width = "400px";
+        document.getElementById('hangmanImg').style.height = "20vw";
+        document.getElementById('hangmanImg').style.width = "20vw";
      }
 
 
