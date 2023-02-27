@@ -1,6 +1,6 @@
 
 
-//color-theme-change button 
+//color-theme toggle-able button; functional on all pages
 
 const root = document.querySelector(':root');
 const body = document.querySelector('body');
@@ -24,22 +24,22 @@ colorThemeButton.addEventListener('click', () => {
     if (sessionStorage.getItem('color mode') === 'light mode'){
         document.querySelector(':root').style.setProperty('--main-color', 'rgb(126, 78, 101)');
         sessionStorage.setItem('color mode', 'dark mode');
-        console.log('in if'); 
 
     }else if(sessionStorage.getItem('color mode') === 'dark mode'){
         document.querySelector(':root').style.setProperty('--main-color', 'rgb(255, 243, 235)');
         // root.style.setProperty('--dark-theme-main-color', lightThemeColor);
         sessionStorage.setItem('color mode', 'light mode');
-        console.log('in else');
     }         
 });
 
 
-
+//////////////////code to specify what page takes what functions/////////
 if (window.location.pathname === "/index.html"){
+//for later use (empty now)
+
 
 }else if (window.location.pathname === "/projects.html"){
-
+//code for project page "grow on mouseover"
     function bigImg(x) {
         document.getElementById('spaceImg').style.height = "35vw";
         document.getElementById('spaceImg').style.width = "35vw";
@@ -63,12 +63,11 @@ if (window.location.pathname === "/index.html"){
 
 
 
-
-
 }else if (window.location.pathname === "/resume.html"){
+//for later use (empty now)
 
 }else if(window.location.pathname === "/aboutme.html"){
-        // aboutMePage img carousel //
+// about me page img carousel 
         let previousImgIndex = 0;
         let currentImgIndex =0;
 
@@ -85,7 +84,6 @@ if (window.location.pathname === "/index.html"){
                     }
                 aboutMePageImages[currentImgIndex].style.display = 'block';
                 });
-            console.log(previousButton);
 
         //event listener for next button
         const nextButton = document.querySelector('.aboutMeImgButton-next');

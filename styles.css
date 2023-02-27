@@ -207,7 +207,7 @@ h3 li a{
         "space-battle hangman";
     max-width: 90vw;
     margin: 0;
-    font-size: 1.2vw;
+    font-size: 2vw;
 }
 
 #here{
@@ -250,6 +250,8 @@ h3 li a{
     
 }
 #resumeImg{
+    min-width: 700px;
+    min-height: 1000px;
     width: auto;
     height: auto;
 }
@@ -360,7 +362,7 @@ h3 li a{
     /* /////////////////projects page -tablet ///////////////////*/
     #projectsSection{
         display: block;
-        margin: 0, 3%;
+        font-size: 17px;
     }
 
     #projectsSection p{
@@ -371,7 +373,12 @@ h3 li a{
     body{
         margin: auto;
     }
-
+    #project1{
+        margin: auto;
+    }
+    #spaceBattleInfo p{
+        margin:0;
+    }
     #project2{
         margin-top: 40px;
     }
