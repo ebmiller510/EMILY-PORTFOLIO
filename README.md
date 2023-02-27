@@ -24,8 +24,8 @@
 
 ## Wireframes
 
-![webstie rough draft 1](image/wireframe1.png.png)
-![website rough draft 2](image/wireframe2.png.png)
+![webstie rough draft 1](image/wireframe1.png)
+![website rough draft 2](image/wireframe2.png)
 Granted, these are quite sloppy, but they were modified over time.
 
 ## Victories and Defeats
